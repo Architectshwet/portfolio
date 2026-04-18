@@ -290,6 +290,25 @@ PROJECTS = [
         ],
     },
     {
+        "title": "KnowledgeForge RAG Studio",
+        "technologies": (
+            "Python, FastAPI, OpenAI API, RAG (Retrieval-Augmented Generation), Milvus (Vector DB), Redis, PostgreSQL (Neon), Docker, Pydantic, Embeddings, Query Rewriting, Reranking, LLM Evaluation (LLM-as-a-Judge)"
+        ),
+        "highlights": [
+            "Built an end-to-end production-style RAG backend with two ingestion strategies (recursive or semantic chunking), embedding generation, and managed Milvus indexing/search.",
+            "Implemented a history-aware retrieval pipeline with query rewriting, top-k vector retrieval, and LLM-based reranking to improve context relevance before answer generation.",
+            "Designed a cache-first response path using Redis semantic answer caching (embedding similarity threshold, TTL, and max-entry controls) to reduce repeated LLM calls and latency.",
+            "Developed multi-turn conversational memory with PostgreSQL-backed thread history persistence, enabling consistent context across sessions and follow-up queries.",
+            "Added evaluation and observability workflows, including LLM-as-a-judge scoring (accuracy, completeness, relevance, feedback) and ingestion cost telemetry for semantic chunking and embeddings."
+        ],
+        "links": [
+            {
+                "label": "GitHub Repository",
+                "url": "https://github.com/Architectshwet/KnowledgeForge-RAG-Studio/tree/main",
+            }
+        ],
+    },
+    {
         "title": "Production-Grade MLOps with Automated CI/CD",
         "technologies": (
             "Python, FastAPI, Docker, MLflow, GitHub Actions, AWS ECS Fargate, AWS EC2, AWS S3, "
